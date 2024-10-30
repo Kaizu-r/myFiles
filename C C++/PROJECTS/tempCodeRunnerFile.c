@@ -1,0 +1,1 @@
+if((strcmp(p->plateNum, tempNo) == 0) && (strcmp(p->profileID, tempID) == 0) && p->status != 0)

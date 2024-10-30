@@ -1,0 +1,12 @@
+10
+
+Variable
+int
+Science
+student
+programming
+char 
+ARRAY
+FunctION
+poInter
+float

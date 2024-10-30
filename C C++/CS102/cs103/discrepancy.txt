@@ -1,0 +1,3 @@
+Plate Number: 1 | Profile ID: 16 -> Discrepancy: A
+Plate Number: 54321 | Expected Profile ID: 13245 | Discrepancy: LALALA
+Plate Number: 54321 | Expected Profile ID: 13245 | Discrepancy: WRONGNAME

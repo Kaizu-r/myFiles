@@ -1,0 +1,14 @@
+Enter the size of array: 5
+Enter the array elements:  5 4 3 2 1
+Which sorting algorithm do you want to use?
+	1. SELECTION SORT
+	2. INSERTION SORT
+	3. BUBBLE SORT
+	4. MERGE SORT
+	Type number of choice: 2
+Iteration 0: 5 4 3 2 1 
+Iteration 1: 4 5 3 2 1 
+Iteration 2: 3 4 5 2 1 
+Iteration 3: 2 3 4 5 1 
+Iteration 4: 1 2 3 4 5 
+Sorted Array: 1 2 3 4 5 
