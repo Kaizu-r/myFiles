@@ -95,7 +95,7 @@ void render(vec3 vert[], int n){
 
     //start the printing
     line = vert[0].y - line;
-    space = vert[0].x - space;
+    space = vert[0].x - space - 1;
     for(int i = 0; i < line; i++){
         printf("\n");
     }
@@ -108,9 +108,9 @@ void render(vec3 vert[], int n){
         //count number of lines needed for current vertex
         line = vert[i].y - vert[i-1].y;
         if(line == 0) //curr vertex and prev vertex are in the same line
-            space = vert[i].x - vert[i -1].x;
+            space = vert[i].x - vert[i -1].x - 1;
         else //curr vertex and prev vertex are NOT in the same lin
-            space = vert[i].x;
+            space = vert[i].x - 1;
         for(int j = 0; j < line; j++){
             printf("\n");
         }
