@@ -1,9 +1,8 @@
+#ifndef COORDS_H
+#define COORDS_H
 #include <math.h>
-
-typedef struct crds{
-    int x;
-    int y;
-} coords;
+#include <stdlib.h>
+#include "vertex.h"
 
 //set up for global coords
 /*
@@ -30,4 +29,29 @@ typedef struct crds{
 
     (0, y)              (x,y)
     we have to convert pixel coords to terminal "coords"
+    terminal.x = pixel.x + width/2 + shift value
+    terminal.y = -(pixel/y - height/2) 
 */
+
+//scales normalized vertex coords to "pixel" coords
+vec3 toPixel(vec3* vertex, int width, int height){
+    vec3 pixel;
+    //truncate
+    pixel.x = (int) (vertex->x * width/2);
+    pixel.y = (int) (vertex->y * height/2);
+    pixel.z = vertex->z;
+    return pixel;
+}
+
+//turns pixel coords to terminal coords
+vec3 toTerminal(vec3* pixel, int width, int height){
+    vec3 terminal;
+    int shift = width >> 1;
+    terminal.x = pixel->x + width/2 + shift;
+    terminal.y = -(pixel->y - height/2);
+    terminal.z = pixel->z;
+
+    return terminal;
+}
+
+#endif

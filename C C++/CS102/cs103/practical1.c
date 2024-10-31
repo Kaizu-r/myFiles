@@ -302,7 +302,7 @@ void mergesort(int array[], int i, int j)
 }
 void merge(int array[], int i, int j, int i1, int j1)
 {
-    int temp[MAX];
+    int temp[j1 + 1];
     int k = 0;
     int start1 = i;
     int start2 = i1;

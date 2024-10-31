@@ -1,16 +1,19 @@
+#ifndef VERTEX_H
+#define VERTEX_H
 #include <stdlib.h>
 
 //vector 
-typedef struct Vec3{
+typedef struct vector3{
     float x;
     float y;
     float z;
 } vec3;
 
-//vertex
-typedef struct Vertex{
-    struct Vec3 pos;
+typedef struct vector2{
+    float x;
+    float y;
+} vec2;
 
-} vertex;
+#endif
 
 
